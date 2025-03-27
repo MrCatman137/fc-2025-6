@@ -1,0 +1,19 @@
+.tasks {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    overflow-y: auto;
+    max-height: calc(100vh - 100px);
+    margin-bottom: 10px;
+}
+
+.empty-message {
+    font-size: 18px;
+    font-weight: bold;
+    color: #eeeeee;
+    position: relative;
+    text-align: center;
+}

@@ -1,0 +1,10 @@
+.tasks-container {
+    background: linear-gradient(to right, #7abfcd, #55a6b7, #2d8c9e);
+    padding: 20px;
+    flex: 1; 
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    box-sizing: border-box;
+    height: 100%; /* Висота на всю сторінку */
+  }

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List (Vanilla JS)</title>
+    <link rel="stylesheet" href="todo.css">
+</head>
+<body>
+    <div class="tasks-container">
+        <div id="tasks" class="tasks">
+            <!-- Таски -->
+        </div>
+        <div class="add">
+            <input type="text" id="taskInput" placeholder="Введіть нове завдання">
+            <div>
+                <input type="number" id="pointsInput" placeholder="Бали" min="1" max="100">
+                <button id="addTaskBtn">Додати</button>    
+            </div>
+        </div>
+    </div>
+    
+    <div class="progresion">
+        <p>Виконано: <span id="completedCount">0</span> / <span id="totalCount">0</span></p>
+        <p>Рівень користувача: <span id="userLevel">0</span></p>
+        <div class="progress-bar">
+            <div id="progress" class="progress-fill"></div>
+        </div>
+    </div>
+
+    <script src="todo.js"></script>
+</body>
+</html>

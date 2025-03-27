@@ -1,0 +1,91 @@
+.add {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+ 
+.add div {
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#addTaskBtn {
+    background-color: #2a3b59;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#addTaskBtn:hover {
+    background-color: #216688;
+}
+
+#addTaskBtn:active {
+    background-color: #3989cf;
+}
+
+#addTaskBtn:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+#taskInput {
+    flex-grow: 9;
+    min-width: 150px;
+}
+
+#pointsInput {
+    flex-grow: 1;
+    min-width: 50px;
+    max-width: 80px;
+    text-align: center;
+}
+
+/* Адаптація для мобільних пристроїв */
+@media (max-width: 768px) {
+
+    #taskInput {
+        width: 100%;
+        min-width: 0;
+    }
+
+    #pointsInput {
+        width: 100%;
+        min-width: 55px;
+        max-width: none;
+        text-align: center;
+    }
+
+    .add div {
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 440px) {
+    .add {
+        flex-direction: column;
+    }
+
+    #taskInput {
+        width: calc(100% - 20px);
+        min-width: 0;
+    }
+
+    #pointsInput {
+        width: 100%;
+        min-width: 0;
+        max-width: none;
+        text-align: center;
+    }
+}
